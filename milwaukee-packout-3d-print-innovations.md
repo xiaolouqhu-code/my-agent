@@ -6,6 +6,45 @@
 
 ---
 
+## 📚 数据来源与模型链接
+
+### 官方产品
+- **Milwaukee 48-22-8341**: https://www.milwaukeetool.com/Products/48-22-8341
+- **Home Depot**: https://www.homedepot.com/p/Milwaukee-PACKOUT-Screwdriver-Rack-48-22-8341/320089612
+
+### 3D打印模型来源
+
+#### Printables.com
+- **Milwaukee PACKOUT标签页**: https://www.printables.com/tag/milwaukeepackout (1,953个模型)
+- **Xirabolt螺丝刀整理器**: https://www.printables.com/model/262216-milwaukee-packout-screwdriver-organizer
+- **标签系统 by maxelman**: https://www.printables.com/model/408217-milwaukee-packout-handle-labeling
+- **搜索结果**: https://www.printables.com/search?q=milwaukee%20packout%20screwdriver
+
+#### MakerWorld
+- **薄型模板 by Balake**: https://makerworld.com/en/models/995049-milwaukee-packout-thin-organizer-insert-template
+- **3抽屉整理器 by Thelorax121**: https://makerworld.com/en/models/1730744-milwaukee-packout-3-drawer-pliers-tool-organizer
+- **Milwaukee PACKOUT搜索**: https://makerworld.com/en/search?keyword=milwaukee+packout
+
+#### Thingiverse
+- **Milwaukee PACKOUT标签**: https://www.thingiverse.com/tag:milwaukee_packout
+- **搜索结果**: https://www.thingiverse.com/search?q=milwaukee+packout&page=1
+
+#### 其他来源
+- **3D Prints by ElectronSmith**: https://3dprints.electronsmith.com/
+  - Slim Packout Bins系列
+
+### 商业平台
+- **Etsy**: https://www.etsy.com/search?q=milwaukee+packout+3d+print
+- **eBay**: https://www.ebay.com/sch/i.html?_nkw=milwaukee+packout+organizer
+- **Cults3D**: https://cults3d.com/en/search?q=milwaukee+packout
+
+### 社区资源
+- **Reddit r/MilwaukeeTool**: https://www.reddit.com/r/MilwaukeeTool/
+- **Reddit r/3Dprinting**: https://www.reddit.com/r/3Dprinting/
+- **Bambu Lab社区**: https://forum.bambulab.com/
+
+---
+
 ## 一、官方产品回顾
 
 ### 米沃奇官方螺丝刀支架 (48-22-8341)

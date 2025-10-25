@@ -6,6 +6,24 @@
 
 ---
 
+## 📚 数据来源与参考链接
+
+### 官方产品信息
+- **Milwaukee官网**: https://www.milwaukeetool.com/Products/48-22-8341
+- **Home Depot**: https://www.homedepot.com/p/Milwaukee-PACKOUT-Screwdriver-Rack-48-22-8341/320089612
+- **Amazon**: https://www.amazon.com/Milwaukee-48-22-8341-PACKOUT-Storage-Screwdriver/dp/B0BL86RL68
+
+### 市场数据来源
+- **市场调研**: 基于Google搜索、Reddit工具社区、工具论坛讨论
+- **用户评价**: Home Depot用户评论、Amazon评论、Reddit r/Tools板块
+- **竞品分析**: 各品牌官网及第三方零售渠道
+
+### 行业信息
+- **PACKOUT系统**: Milwaukee官方PACKOUT产品线页面
+- **工具存储趋势**: 行业报告综合分析
+
+---
+
 ## 一、产品概述
 
 ### 1.1 基本信息

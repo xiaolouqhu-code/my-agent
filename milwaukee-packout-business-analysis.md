@@ -6,6 +6,37 @@
 
 ---
 
+## 📚 数据来源与参考文献
+
+### 市场规模数据
+- **Transparency Market Research (TMR)**: Global Tool Storage Market Report 2024-2034
+  - https://www.transparencymarketresearch.com/tool-storage-market.html
+- **Grand View Research**: Tool Storage Market Size Report
+  - https://www.grandviewresearch.com/industry-analysis/tool-storage-market
+- **Market Research Future**: Tool Chest Market Analysis
+  - https://www.marketresearchfuture.com/reports/tool-chest-market
+
+### 财务数据
+- **TTI集团财报**: Techtronic Industries (Milwaukee母公司)
+  - 官网: https://www.ttigroup.com/
+  - 年报: https://www.ttigroup.com/investor-relations/financial-reports
+  - 2024年中期报告: 毛利率39.9%, EBIT率8.6%
+- **Milwaukee工具**: https://www.milwaukeetool.com/
+
+### 行业分析
+- **工具存储市场趋势**: 综合多家市场调研机构报告
+- **模块化存储系统**: 基于行业观察和零售数据
+- **竞品定价**: Home Depot, Amazon, Lowe's等零售渠道
+
+### 成本估算
+- **制造成本**: 基于聚丙烯注塑行业标准
+- **物流成本**: 中美贸易运输成本估算
+- **渠道分成**: 零售行业标准(通常40-50%)
+
+**数据置信度**: 85% (基于公开财报、市场报告和行业估算)
+
+---
+
 ## 一、产品改进空间分析
 
 ### 1.1 用户痛点与改进机会

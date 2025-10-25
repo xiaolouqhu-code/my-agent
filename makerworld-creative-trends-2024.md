@@ -6,6 +6,45 @@
 
 ---
 
+## 📚 数据来源与模型链接
+
+### 平台主页
+- **MakerWorld官网**: https://makerworld.com/
+- **Bambu Lab**: https://bambulab.com/
+- **MakerWorld搜索**: https://makerworld.com/en/models
+
+### 热门模型链接
+
+#### Bambu Lab配件
+- **Top Tool Storage by Cake3d**: https://makerworld.com/en/@Cake3d (创作者主页)
+- **A1 Mini All-in-One Organizer by Never Disarm**: https://makerworld.com/en/@NeverDisarm
+- **Build Plate Holder by duck.knapp**: https://makerworld.com/en/@duck.knapp
+
+#### 办公桌面
+- **Make My Desk Organizer** (官方项目): https://makerworld.com/en/make-my-desk-organizer
+- **Kumiko Design by KL Worx**: https://makerworld.com/en/@KLWorx
+
+#### 玩具与游戏
+- **Kinetic Fidget by BogdanS**: https://makerworld.com/en/@BogdanS
+- **Toys for Children by Zipert 3D**: https://makerworld.com/en/@Zipert3D
+- **BOARD GAMES by RITZ**: https://makerworld.com/en/@RITZ
+
+#### TPU产品
+- **TPU Products Collection**: https://makerworld.com/en/search?keyword=TPU
+
+### 其他3D打印平台
+- **Printables**: https://www.printables.com/
+- **Thingiverse**: https://www.thingiverse.com/
+- **Cults3D**: https://cults3d.com/
+- **MyMiniFactory**: https://www.myminifactory.com/
+
+### 趋势数据来源
+- **MakerWorld Trending页面**: 实时热门模型排行
+- **社区讨论**: Reddit r/BambuLab, r/3Dprinting
+- **设计师访谈**: 基于公开的创作者信息
+
+---
+
 ## 一、平台概述
 
 ### 1.1 MakerWorld 简介
