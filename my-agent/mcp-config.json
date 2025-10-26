@@ -1,0 +1,119 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/allenlou/Documents/ai-file/my-project/my-agent"],
+      "description": "文件系统访问 - 支持读写 my-agent 项目文件和配置"
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "知识图谱 - 持久化记忆和知识管理，用于助理能力增强"
+    },
+    "agent-knowledge": {
+      "command": "node",
+      "args": ["servers/knowledge-server.js"],
+      "description": "Agent 知识库 - 管理各类助理的专业知识和能力配置"
+    },
+    "task-orchestrator": {
+      "command": "node", 
+      "args": ["servers/task-server.js"],
+      "description": "任务编排器 - 协调多个助理协同工作"
+    },
+    "capability-enhancer": {
+      "command": "node",
+      "args": ["servers/capability-server.js"], 
+      "description": "能力增强器 - 动态扩展助理的专业能力"
+    }
+  },
+  "clientConfig": {
+    "timeout": 30000,
+    "retryAttempts": 3,
+    "logLevel": "info"
+  },
+  "agentCapabilities": {
+    "strategic": {
+      "brainstorm": {
+        "enabled": true,
+        "mcpServers": ["memory", "agent-knowledge"],
+        "capabilities": ["创意生成", "头脑风暴", "策略规划"]
+      },
+      "research": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "agent-knowledge"],
+        "capabilities": ["市场调研", "竞品分析", "数据收集"]
+      },
+      "product": {
+        "enabled": true,
+        "mcpServers": ["memory", "agent-knowledge", "task-orchestrator"],
+        "capabilities": ["产品规划", "需求分析", "功能设计"]
+      },
+      "data": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "capability-enhancer"],
+        "capabilities": ["数据分析", "报告生成", "洞察提取"]
+      }
+    },
+    "operation": {
+      "project": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "task-orchestrator"],
+        "capabilities": ["项目管理", "进度跟踪", "资源协调"]
+      },
+      "knowledge": {
+        "enabled": true,
+        "mcpServers": ["memory", "agent-knowledge", "capability-enhancer"],
+        "capabilities": ["知识管理", "文档整理", "信息检索"]
+      },
+      "reflection": {
+        "enabled": true,
+        "mcpServers": ["memory", "agent-knowledge"],
+        "capabilities": ["工作反思", "经验总结", "改进建议"]
+      }
+    },
+    "execution": {
+      "coding": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "capability-enhancer"],
+        "capabilities": ["代码生成", "调试优化", "架构设计"]
+      },
+      "writing": {
+        "enabled": true,
+        "mcpServers": ["memory", "agent-knowledge", "capability-enhancer"],
+        "capabilities": ["文档撰写", "内容创作", "文案优化"]
+      },
+      "design": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "capability-enhancer"],
+        "capabilities": ["界面设计", "用户体验", "视觉优化"]
+      },
+      "automation": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "task-orchestrator", "capability-enhancer"],
+        "capabilities": ["流程自动化", "任务调度", "系统集成"]
+      }
+    },
+    "support": {
+      "database": {
+        "enabled": true,
+        "mcpServers": ["memory", "capability-enhancer"],
+        "capabilities": ["数据库设计", "查询优化", "数据迁移"]
+      },
+      "deployment": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "task-orchestrator"],
+        "capabilities": ["部署管理", "环境配置", "CI/CD"]
+      },
+      "monitor": {
+        "enabled": true,
+        "mcpServers": ["memory", "capability-enhancer"],
+        "capabilities": ["系统监控", "性能分析", "故障诊断"]
+      },
+      "mcp_integrator": {
+        "enabled": true,
+        "mcpServers": ["filesystem", "memory", "task-orchestrator", "capability-enhancer"],
+        "capabilities": ["MCP集成", "服务管理", "协议适配"]
+      }
+    }
+  }
+}

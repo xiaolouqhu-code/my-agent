@@ -1,0 +1,322 @@
+{
+  "agentCapabilities": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-12-26",
+    "agents": {
+      "investment_advisor": {
+        "name": "投资顾问助理",
+        "description": "专业的投资分析和建议助理",
+        "category": "strategic",
+        "capabilities": [
+          "strategic_analysis",
+          "market_research",
+          "risk_assessment",
+          "portfolio_optimization",
+          "financial_modeling"
+        ],
+        "mcpServers": [
+          "agent-knowledge",
+          "task-orchestrator",
+          "capability-enhancer"
+        ],
+        "tools": [
+          "analyze_market_trends",
+          "assess_investment_risk",
+          "optimize_portfolio",
+          "generate_investment_report",
+          "track_market_performance"
+        ],
+        "dataAccess": [
+          "market_data",
+          "financial_reports",
+          "economic_indicators",
+          "company_profiles"
+        ],
+        "integrations": [
+          "bloomberg_api",
+          "yahoo_finance",
+          "sec_filings",
+          "economic_calendar"
+        ]
+      },
+      "project_manager": {
+        "name": "项目管理助理",
+        "description": "高效的项目规划和执行管理助理",
+        "category": "operational",
+        "capabilities": [
+          "operational_management",
+          "execution_support",
+          "resource_allocation",
+          "timeline_management",
+          "stakeholder_communication"
+        ],
+        "mcpServers": [
+          "task-orchestrator",
+          "capability-enhancer",
+          "filesystem"
+        ],
+        "tools": [
+          "create_project_plan",
+          "track_milestones",
+          "allocate_resources",
+          "manage_dependencies",
+          "generate_status_reports"
+        ],
+        "dataAccess": [
+          "project_documents",
+          "team_calendars",
+          "resource_availability",
+          "budget_information"
+        ],
+        "integrations": [
+          "jira_api",
+          "slack_integration",
+          "calendar_sync",
+          "document_management"
+        ]
+      },
+      "technical_integrator": {
+        "name": "技术集成助理",
+        "description": "专业的系统集成和技术对接助理",
+        "category": "support",
+        "capabilities": [
+          "technical_integration",
+          "api_management",
+          "data_transformation",
+          "system_monitoring",
+          "troubleshooting"
+        ],
+        "mcpServers": [
+          "capability-enhancer",
+          "filesystem",
+          "git"
+        ],
+        "tools": [
+          "integrate_systems",
+          "manage_apis",
+          "transform_data",
+          "monitor_performance",
+          "debug_issues"
+        ],
+        "dataAccess": [
+          "system_logs",
+          "api_documentation",
+          "configuration_files",
+          "monitoring_metrics"
+        ],
+        "integrations": [
+          "rest_apis",
+          "graphql_endpoints",
+          "database_connections",
+          "cloud_services"
+        ]
+      },
+      "business_analyst": {
+        "name": "业务分析助理",
+        "description": "深度业务洞察和数据分析助理",
+        "category": "strategic",
+        "capabilities": [
+          "strategic_analysis",
+          "data_analysis",
+          "business_intelligence",
+          "process_optimization",
+          "performance_measurement"
+        ],
+        "mcpServers": [
+          "agent-knowledge",
+          "task-orchestrator",
+          "capability-enhancer"
+        ],
+        "tools": [
+          "analyze_business_data",
+          "identify_trends",
+          "optimize_processes",
+          "measure_kpis",
+          "generate_insights"
+        ],
+        "dataAccess": [
+          "business_metrics",
+          "customer_data",
+          "operational_data",
+          "financial_records"
+        ],
+        "integrations": [
+          "analytics_platforms",
+          "crm_systems",
+          "erp_integration",
+          "bi_tools"
+        ]
+      }
+    },
+    "capabilityDefinitions": {
+      "strategic_analysis": {
+        "name": "战略分析",
+        "description": "提供深度战略分析和决策支持",
+        "level": "advanced",
+        "category": "strategic",
+        "dependencies": ["data_analysis", "market_research"],
+        "tools": ["analyze_market_trends", "strategic_planning", "risk_assessment"],
+        "metrics": ["accuracy", "depth", "actionability"],
+        "trainingData": ["market_reports", "strategic_frameworks", "case_studies"]
+      },
+      "operational_management": {
+        "name": "运营管理",
+        "description": "优化业务流程和运营效率",
+        "level": "intermediate",
+        "category": "operational",
+        "dependencies": ["process_optimization"],
+        "tools": ["workflow_optimization", "resource_allocation", "performance_monitoring"],
+        "metrics": ["efficiency", "cost_reduction", "quality"],
+        "trainingData": ["process_documentation", "best_practices", "operational_metrics"]
+      },
+      "execution_support": {
+        "name": "执行支持",
+        "description": "提供任务执行和项目管理支持",
+        "level": "basic",
+        "category": "execution",
+        "dependencies": [],
+        "tools": ["task_management", "project_tracking", "deadline_monitoring"],
+        "metrics": ["completion_rate", "timeliness", "quality"],
+        "trainingData": ["project_templates", "execution_frameworks", "success_patterns"]
+      },
+      "technical_integration": {
+        "name": "技术集成",
+        "description": "处理技术集成和系统对接",
+        "level": "advanced",
+        "category": "support",
+        "dependencies": ["api_management", "data_integration"],
+        "tools": ["system_integration", "api_orchestration", "data_transformation"],
+        "metrics": ["reliability", "performance", "compatibility"],
+        "trainingData": ["integration_patterns", "api_documentation", "technical_specifications"]
+      },
+      "data_analysis": {
+        "name": "数据分析",
+        "description": "深度数据分析和洞察提取",
+        "level": "intermediate",
+        "category": "analytical",
+        "dependencies": [],
+        "tools": ["statistical_analysis", "data_visualization", "pattern_recognition"],
+        "metrics": ["accuracy", "insight_quality", "visualization_clarity"],
+        "trainingData": ["datasets", "analysis_methods", "visualization_examples"]
+      },
+      "market_research": {
+        "name": "市场研究",
+        "description": "全面的市场调研和分析",
+        "level": "intermediate",
+        "category": "research",
+        "dependencies": ["data_analysis"],
+        "tools": ["market_analysis", "competitor_research", "trend_identification"],
+        "metrics": ["comprehensiveness", "accuracy", "timeliness"],
+        "trainingData": ["market_reports", "industry_data", "research_methodologies"]
+      }
+    },
+    "workflows": {
+      "investment_analysis_workflow": {
+        "name": "投资分析工作流",
+        "description": "完整的投资分析流程",
+        "agents": ["investment_advisor", "business_analyst"],
+        "steps": [
+          {
+            "id": "market_research",
+            "agent": "investment_advisor",
+            "action": "conduct_market_research",
+            "dependencies": []
+          },
+          {
+            "id": "financial_analysis",
+            "agent": "business_analyst",
+            "action": "analyze_financial_data",
+            "dependencies": ["market_research"]
+          },
+          {
+            "id": "risk_assessment",
+            "agent": "investment_advisor",
+            "action": "assess_investment_risk",
+            "dependencies": ["financial_analysis"]
+          },
+          {
+            "id": "recommendation",
+            "agent": "investment_advisor",
+            "action": "generate_investment_recommendation",
+            "dependencies": ["risk_assessment"]
+          }
+        ]
+      },
+      "project_execution_workflow": {
+        "name": "项目执行工作流",
+        "description": "标准项目执行流程",
+        "agents": ["project_manager", "technical_integrator"],
+        "steps": [
+          {
+            "id": "project_planning",
+            "agent": "project_manager",
+            "action": "create_project_plan",
+            "dependencies": []
+          },
+          {
+            "id": "resource_allocation",
+            "agent": "project_manager",
+            "action": "allocate_resources",
+            "dependencies": ["project_planning"]
+          },
+          {
+            "id": "technical_setup",
+            "agent": "technical_integrator",
+            "action": "setup_technical_infrastructure",
+            "dependencies": ["resource_allocation"]
+          },
+          {
+            "id": "execution_monitoring",
+            "agent": "project_manager",
+            "action": "monitor_project_execution",
+            "dependencies": ["technical_setup"]
+          }
+        ]
+      }
+    },
+    "integrationSettings": {
+      "mcpConfiguration": {
+        "serverTimeout": 30000,
+        "maxRetries": 3,
+        "logLevel": "info",
+        "enableMetrics": true
+      },
+      "dataAccess": {
+        "cacheTimeout": 3600,
+        "maxCacheSize": "100MB",
+        "compressionEnabled": true
+      },
+      "security": {
+        "encryptionEnabled": true,
+        "accessControl": "role-based",
+        "auditLogging": true
+      }
+    },
+    "monitoring": {
+      "metrics": [
+        "response_time",
+        "success_rate",
+        "error_rate",
+        "capability_usage",
+        "agent_performance"
+      ],
+      "alerts": [
+        {
+          "name": "high_error_rate",
+          "condition": "error_rate > 5%",
+          "action": "notify_admin"
+        },
+        {
+          "name": "slow_response",
+          "condition": "response_time > 10s",
+          "action": "scale_resources"
+        }
+      ],
+      "dashboards": [
+        "agent_performance",
+        "capability_utilization",
+        "system_health"
+      ]
+    }
+  }
+}

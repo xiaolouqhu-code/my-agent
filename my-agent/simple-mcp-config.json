@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/allenlou/Documents/ai-file/my-project/my-agent"],
+      "description": "文件系统访问 - 支持读写 my-agent 项目文件和配置"
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "知识图谱 - 持久化记忆和知识管理，用于助理能力增强"
+    }
+  },
+  "clientConfig": {
+    "timeout": 10000,
+    "retryAttempts": 2,
+    "logLevel": "info"
+  },
+  "agentCapabilities": {
+    "basic": {
+      "file_management": {
+        "enabled": true,
+        "mcpServers": ["filesystem"],
+        "capabilities": ["文件读写", "目录管理", "配置管理"]
+      },
+      "knowledge_base": {
+        "enabled": true,
+        "mcpServers": ["memory"],
+        "capabilities": ["知识存储", "信息检索", "上下文记忆"]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "my-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "一个专业的 AI Agent 系统,采用四层架构设计,涵盖从战略规划到技术执行的完整工作流程。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mcp:start": "node mcp-launcher.js start",
+    "mcp:stop": "node mcp-launcher.js stop",
+    "mcp:restart": "node mcp-launcher.js restart",
+    "mcp:status": "node mcp-launcher.js status",
+    "mcp:test": "node mcp-launcher.js test",
+    "simple:start": "node simple-mcp-launcher.js start",
+    "simple:stop": "node simple-mcp-launcher.js stop",
+    "simple:status": "node simple-mcp-launcher.js status",
+    "simple:test": "node simple-mcp-launcher.js test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "@modelcontextprotocol/server-filesystem": "^2025.8.21",
+    "@modelcontextprotocol/server-memory": "^2025.9.25"
+  }
+}
