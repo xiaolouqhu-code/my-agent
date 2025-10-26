@@ -1,11 +1,6 @@
-import { generateText } from "ai"
-import { createOpenAI } from "@ai-sdk/openai"
-
-// Configure OpenRouter
-const openrouter = createOpenAI({
-  apiKey: process.env.OPENROUTER_API_KEY,
-  baseURL: process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1",
-})
+// Direct OpenRouter API call configuration
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY
+const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 const SYSTEM_PROMPT = `你是「流金亚马逊智能调研系统」的核心AI模块，代号 amz_research_v0。  
 你的职责是帮助调研团队理解输入的产品线索，并为系统生成标准化的调研意图。
@@ -115,13 +110,39 @@ export async function POST(req: Request) {
 
     console.log("[v0] Analyzing input:", { input, inputType })
 
-    // Use AI SDK to generate structured analysis
-    const { text } = await generateText({
-      model: openrouter("openai/gpt-4o-mini"),
-      system: SYSTEM_PROMPT,
-      prompt: `分析以下${inputType}输入并返回JSON结果：\n\n${input}`,
-      temperature: 0.3,
+    // Call OpenRouter API directly
+    const response = await fetch(OPENROUTER_API_URL, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": "http://localhost:3001",
+        "X-Title": "AMZ Research System",
+      },
+      body: JSON.stringify({
+        model: "openai/gpt-4o-mini",
+        messages: [
+          {
+            role: "system",
+            content: SYSTEM_PROMPT,
+          },
+          {
+            role: "user",
+            content: `分析以下${inputType}输入并返回JSON结果：\n\n${input}`,
+          },
+        ],
+        temperature: 0.3,
+      }),
     })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.error("[v0] OpenRouter API error:", response.status, errorText)
+      throw new Error(`OpenRouter API error: ${response.status} ${errorText}`)
+    }
+
+    const apiResponse = await response.json()
+    const text = apiResponse.choices[0].message.content
 
     console.log("[v0] AI response:", text)
 
