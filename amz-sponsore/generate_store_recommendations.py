@@ -6,10 +6,12 @@ from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
+# 导入配置
+from config import get_data_path, get_output_path, ensure_output_dir, DATA_DIR
+
 # 设置数据目录
-base_dir = '/Users/liujinxingzheng/Documents/ai-file/amz-sponsore'
-output_dir = os.path.join(base_dir, '广告调整建议')
-os.makedirs(output_dir, exist_ok=True)
+base_dir = DATA_DIR
+output_dir = ensure_output_dir('广告调整建议')
 
 # 8个独立店铺的文件映射
 stores = {
